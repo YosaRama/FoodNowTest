@@ -1,0 +1,254 @@
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* MAIN TITLE */
+
+.navbar {
+  height: auto;
+  z-index: 1;
+  margin: 0%;
+  position: absolute;
+  color: white;
+}
+
+.navTitle {
+  display: inline;
+}
+
+.navContainer {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.navContainer li {
+  display: inline;
+  margin-left: 25px;
+}
+
+#title {
+  color: white;
+}
+
+.mainContainer {
+  position: relative;
+}
+
+.mainImg {
+  z-index: -2;
+  width: 100%;
+}
+
+.mainContent {
+  width: 25%;
+  text-align: center;
+  bottom: 50%;
+  left: 35%;
+  margin: 0%;
+  position: absolute;
+}
+
+/* ABOUT FOODNOW - SECTION */
+
+.aboutContainer {
+  position: relative;
+  padding: 10% 10%;
+}
+
+#aboutImg {
+  position: relative;
+}
+
+#aboutContentBox {
+  z-index: -1;
+  top: 20%;
+  bottom: 0%;
+  left: 25%;
+  background-color: #f5f9fa;
+  display: inline-flexbox;
+  position: absolute;
+}
+
+.aboutContent {
+  left: 45%;
+  text-align: left;
+  position: relative;
+}
+
+.aboutBackground {
+  padding: 5% 0%;
+  position: absolute;
+  width: 100%;
+}
+/* OUR FEATURES SECTION */
+
+#ourFeatures {
+  padding-top: 7%;
+  text-align: center;
+}
+
+.ourFeaturesTitle {
+  padding-bottom: 5%;
+  margin: 0%;
+}
+
+.ourFeaturesItem {
+  display: inline-block;
+  position: relative;
+}
+
+.item {
+  left: 16.67%;
+  position: relative;
+}
+
+.withBorder {
+  border-right: 1px solid rgb(226, 206, 206);
+  border-left: 1px solid rgb(226, 206, 206);
+}
+
+/* HOW IT WORKS SECTION */
+
+#howItWorks {
+  padding-top: 7%;
+}
+
+.howItWorksBackground {
+  position: absolute;
+  z-index: -1;
+  top: -3%;
+  width: 100%;
+}
+
+.howItWorksContainers {
+  z-index: 0;
+  background-color: #f5f9fa;
+  position: relative;
+}
+
+.howItWorksContent {
+  z-index: 1;
+  display: inline;
+  position: absolute;
+  padding-left: 3%;
+}
+
+.howItWorksImg {
+  padding-top: 10%;
+  z-index: 2;
+  margin: 0%;
+}
+
+.howItWorksImgBox {
+  left: 70%;
+  width: 40%;
+  position: relative;
+  display: inline;
+  margin: 0%;
+}
+
+/* DOWNLOAD SECTION */
+
+#download {
+  padding: 0%;
+}
+
+.downloadContainer {
+  background-color: #e77e23;
+  position: relative;
+  height: 700px;
+}
+
+.downloadImgBox {
+  text-align: center;
+  display: inline;
+  top: 100px;
+  position: relative;
+  margin: 0%;
+  padding-left: 10%;
+}
+
+.downloadContentBox {
+  text-align: left;
+  display: inline;
+  position: absolute;
+}
+
+.downloadContent {
+  padding-top: 5rem;
+}
+
+.downloadAppButton {
+  padding: 0;
+  border: none;
+  background: none;
+  display: inline;
+}
+
+.downloadGoogleButton {
+  padding: 0;
+  border: none;
+  background: none;
+  display: inline;
+}
+
+.downloadButton {
+  padding-top: 15rem;
+}
+
+@media (max-width: 768px) {
+  .downloadImgBox {
+    display: none;
+  }
+}
