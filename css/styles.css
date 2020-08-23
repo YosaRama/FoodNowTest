@@ -62,7 +62,6 @@ a {
 /* MAIN TITLE */
 
 .navbar {
-  height: auto;
   z-index: 1;
   margin: 0%;
   padding: 0%;
@@ -449,16 +448,7 @@ a {
   }
 
   .mainButton {
-    background-color: #e77e23;
-    border-radius: 30px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 25px;
-    padding: 5px 40px;
-    text-decoration: none;
-    width: 100;
+    display: none;
   }
 
   .mainButton.download {
@@ -470,7 +460,6 @@ a {
 
   .navContainer a.icon {
     left: 10%;
-    float: inline-end;
     display: inline;
     position: relative;
   }
@@ -478,14 +467,30 @@ a {
     position: relative;
   }
   .navContainer.responsive a.icon {
+    padding-left: 20px;
     position: absolute;
   }
   .navContainer.responsive a {
     display: block;
     text-align: left;
+    position: relative;
   }
 
+  .navItem {
+    margin: 0%;
+    padding-left: 20px;
+  }
+
+  .navTitle {
+    font-size: 2rem;
+  }
   /* ABOUT SECTION RESPONSIVE */
+
+  .aboutContainer {
+    position: relative;
+    padding: 2%;
+    color: black;
+  }
 
   .aboutContentTitle {
     font-family: "Pacifico", cursive;
@@ -494,24 +499,29 @@ a {
   }
 
   #aboutContentBox {
-    z-index: -1;
-    top: 20%;
-    bottom: 0%;
-    left: 25%;
+    width: 100%;
+    left: 0%;
     background-color: #f5f9fa;
-    display: inline;
-    position: absolute;
-    overflow: auto;
+    position: relative;
   }
 
   .aboutContent {
-    left: 45%;
-    text-align: left;
+    text-align: center;
+    width: 80%;
+    left: 5%;
     position: relative;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     line-height: 2;
-    overflow: auto;
+  }
+
+  #aboutImg {
+    display: none;
+  }
+  .aboutBackground {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
   }
 
   /* OUR FEATURES SECTION RENSPOSIVE */
@@ -533,26 +543,24 @@ a {
   /* HOW IT WORKS RESPONSIVE */
 
   .howItWorksTitle {
+    padding-left: 20px;
     font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: 15%;
     margin: 0%;
   }
 
   .howItWorksContent {
-    width: 80%;
-    height: 200px;
+    width: 100%;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     z-index: 1;
-    position: absolute;
-    padding-left: 2%;
+    position: relative;
     color: black;
   }
 
   .howItWorksContent .item {
-    left: 30px;
-    overflow: auto;
+    left: 10px;
   }
 
   /* DOWNLOAD SECTION RESPONSIVE */
@@ -616,37 +624,48 @@ a {
 
   /* FOOTER RESPONSIVE SECTION */
 
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footerContainer {
+    padding: 0%;
+  }
+
   .footerContent {
-    padding-left: 0%;
     display: inline;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
   }
 
   .footerContentTitle {
+    width: 100%;
+    padding-left: 0%;
     font-family: "Pacifico", cursive;
     font-size: 1.5rem;
   }
 
   .footerSocialContent {
-    display: inline;
-    padding-left: 10%;
+    width: 100%;
+    padding-left: 0%;
+    display: block;
     position: relative;
   }
   .footerContentIcon {
     display: inline-block;
-    width: 15%;
-    padding-left: 5px;
+    width: 10%;
   }
 
   .footerContentIconBox {
-    display: inline-block;
+    display: block;
     position: relative;
     top: 10px;
   }
 
   .footerCopyRight {
-    display: inline;
-    padding-left: 15%;
+    width: 100%;
+    padding-left: 0%;
+    display: block;
   }
 }
