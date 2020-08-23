@@ -4,6 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .col-1 {
@@ -49,32 +50,54 @@ body {
   display: table;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.orangeSection {
+  color: #e77e23;
+}
+
 /* MAIN TITLE */
 
 .navbar {
   height: auto;
   z-index: 1;
   margin: 0%;
+  padding: 0%;
   position: absolute;
   color: white;
 }
 
 .navTitle {
   display: inline;
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  padding-left: 5%;
 }
 
 .navContainer {
   display: inline;
-  list-style-type: none;
-  margin: 0;
+  margin: 0%;
   padding: 0;
   overflow: hidden;
   position: relative;
+  left: 40%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
 }
 
-.navContainer li {
-  display: inline;
-  margin-left: 25px;
+.navContainer a:hover {
+  color: black;
+}
+
+.navContainer .icon {
+  display: none;
+}
+
+.navItem {
+  margin-left: 50px;
 }
 
 #title {
@@ -83,6 +106,8 @@ body {
 
 .mainContainer {
   position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
 }
 
 .mainImg {
@@ -91,12 +116,34 @@ body {
 }
 
 .mainContent {
-  width: 25%;
   text-align: center;
-  bottom: 50%;
-  left: 35%;
+  bottom: 30%;
   margin: 0%;
   position: absolute;
+  left: 25%;
+}
+
+.mainButton.download {
+  margin-left: 50px;
+}
+
+.mainButton {
+  background-color: #e77e23;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  padding: 11px 43px;
+  text-decoration: none;
+}
+.mainButton:hover {
+  background-color: #c79c45;
+}
+.mainButton:active {
+  position: relative;
+  top: 1px;
 }
 
 /* ABOUT FOODNOW - SECTION */
@@ -104,10 +151,12 @@ body {
 .aboutContainer {
   position: relative;
   padding: 10% 10%;
+  color: black;
 }
 
 #aboutImg {
   position: relative;
+  z-index: 2;
 }
 
 #aboutContentBox {
@@ -124,21 +173,36 @@ body {
   left: 45%;
   text-align: left;
   position: relative;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2;
+  word-wrap: break-word;
+}
+
+.aboutContentTitle {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  z-index: 2;
 }
 
 .aboutBackground {
   padding: 5% 0%;
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 /* OUR FEATURES SECTION */
 
 #ourFeatures {
   padding-top: 7%;
   text-align: center;
+  color: black;
 }
 
 .ourFeaturesTitle {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
   padding-bottom: 5%;
   margin: 0%;
 }
@@ -146,11 +210,13 @@ body {
 .ourFeaturesItem {
   display: inline-block;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 .item {
   left: 16.67%;
   position: relative;
+  font-size: 1.1rem;
 }
 
 .withBorder {
@@ -162,6 +228,14 @@ body {
 
 #howItWorks {
   padding-top: 7%;
+  color: black;
+}
+
+.howItWorksTitle {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  padding-top: 15%;
+  margin: 0%;
 }
 
 .howItWorksBackground {
@@ -178,10 +252,29 @@ body {
 }
 
 .howItWorksContent {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
   z-index: 1;
   display: inline;
   position: absolute;
-  padding-left: 3%;
+  padding-left: 5%;
+  color: black;
+}
+
+.howItWorksItem {
+  padding-left: 50px;
+}
+
+.howItWorksNumberItem {
+  border: 5px solid #e77e23;
+  border-radius: 100%;
+  width: 50px;
+  text-align: center;
+  color: #e77e23;
+}
+
+.howItWorksNumberItem:hover {
+  border-block-color: #e77e23;
 }
 
 .howItWorksImg {
@@ -192,7 +285,7 @@ body {
 
 .howItWorksImgBox {
   left: 70%;
-  width: 40%;
+
   position: relative;
   display: inline;
   margin: 0%;
@@ -200,14 +293,11 @@ body {
 
 /* DOWNLOAD SECTION */
 
-#download {
-  padding: 0%;
-}
-
 .downloadContainer {
   background-color: #e77e23;
   position: relative;
   height: 700px;
+  color: white;
 }
 
 .downloadImgBox {
@@ -225,8 +315,15 @@ body {
   position: absolute;
 }
 
+.downloadTitle {
+  font-size: 3rem;
+}
+
 .downloadContent {
   padding-top: 5rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .downloadAppButton {
@@ -244,11 +341,312 @@ body {
 }
 
 .downloadButton {
-  padding-top: 15rem;
+  padding-top: 5rem;
 }
 
-@media (max-width: 768px) {
+.downloadButtonImg {
+  padding-left: 10px;
+  display: inline;
+}
+
+/* OUR FEATURE SECTION */
+
+#ourPartners {
+  padding: 15% 0% 5%;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+
+.ourPartnersTitle {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+}
+
+.ourPartnersContainerBox {
+  left: 15%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.ourPartnersItem {
+  padding-bottom: 15px;
+}
+
+/* COVERAGE AREA SECTION */
+
+.coverageAreaContainerBox {
+  padding-left: 5%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 50px;
+  color: black;
+}
+
+.coverageAreaItem {
+  padding: 0%;
+  text-align: left;
+}
+
+/* FOOTER SECTION */
+
+.footerContainer {
+  height: 100px;
+  padding: 50px;
+  color: black;
+}
+
+.footerContentBox {
+  padding-left: 1.5%;
+  display: inline;
+  position: relative;
+}
+
+.footerContent {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.footerContentTitle {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+}
+
+.footerContentIconBox {
+  display: inline-block;
+}
+
+.footerCopyRight {
+  display: inline;
+  padding-left: 30%;
+}
+
+.footerSocialContent {
+  display: inline;
+  padding-left: 25%;
+  position: relative;
+}
+.footerContentIcon {
+  display: inline-block;
+  width: 20%;
+  padding-left: 15px;
+}
+
+.footerContentIconBox {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+}
+
+@media screen and (max-width: 865px) {
+  /* MAIN SECTION RESPONSIVE */
+
+  .mainContent h3 {
+    display: none;
+  }
+
+  .mainButton {
+    background-color: #e77e23;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    padding: 5px 40px;
+    text-decoration: none;
+    width: 100;
+  }
+
+  .mainButton.download {
+    display: none;
+  }
+  .navContainer a {
+    display: none;
+  }
+
+  .navContainer a.icon {
+    left: 10%;
+    float: inline-end;
+    display: inline;
+    position: relative;
+  }
+  .navContainer.responsive {
+    position: relative;
+  }
+  .navContainer.responsive a.icon {
+    position: absolute;
+  }
+  .navContainer.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+  /* ABOUT SECTION RESPONSIVE */
+
+  .aboutContentTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+
+  #aboutContentBox {
+    z-index: -1;
+    top: 20%;
+    bottom: 0%;
+    left: 25%;
+    background-color: #f5f9fa;
+    display: inline;
+    position: absolute;
+    overflow: auto;
+  }
+
+  .aboutContent {
+    left: 45%;
+    text-align: left;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+    overflow: auto;
+  }
+
+  /* OUR FEATURES SECTION RENSPOSIVE */
+
+  .ourFeaturesItem {
+    display: inline-block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+  }
+
+  .ourFeaturesTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    padding-bottom: 5%;
+    margin: 0%;
+  }
+
+  /* HOW IT WORKS RESPONSIVE */
+
+  .howItWorksTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    padding-top: 15%;
+    margin: 0%;
+  }
+
+  .howItWorksContent {
+    width: 80%;
+    height: 200px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    z-index: 1;
+    position: absolute;
+    padding-left: 2%;
+    color: black;
+  }
+
+  .howItWorksContent .item {
+    left: 30px;
+    overflow: auto;
+  }
+
+  /* DOWNLOAD SECTION RESPONSIVE */
+
   .downloadImgBox {
     display: none;
+  }
+
+  .downloadContentBox {
+    text-align: center;
+    width: 80%;
+    text-align: left;
+    position: absolute;
+    left: 12.5%;
+  }
+
+  .downloadTitle {
+    font-size: 2rem;
+  }
+
+  .downloadContent {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 1rem;
+  }
+
+  /* OUR PARTNERS RESPONSIVE */
+
+  #ourPartners {
+    padding: 5% 0%;
+    text-align: center;
+    position: relative;
+    color: black;
+  }
+
+  .ourPartnersTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+  }
+
+  .ourPartnersContainerBox {
+    left: 15%;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
+
+  /* COVERAGE AREA RESPONSIVE SECTION */
+
+  .coverageAreaContainerBox {
+    width: 100%;
+    padding-left: 5%;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    padding-bottom: 50px;
+    color: black;
+    overflow: auto;
+  }
+
+  /* FOOTER RESPONSIVE SECTION */
+
+  .footerContent {
+    padding-left: 0%;
+    display: inline;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+  }
+
+  .footerContentTitle {
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+  }
+
+  .footerSocialContent {
+    display: inline;
+    padding-left: 10%;
+    position: relative;
+  }
+  .footerContentIcon {
+    display: inline-block;
+    width: 15%;
+    padding-left: 5px;
+  }
+
+  .footerContentIconBox {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+  }
+
+  .footerCopyRight {
+    display: inline;
+    padding-left: 15%;
   }
 }
